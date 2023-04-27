@@ -1,0 +1,119 @@
+/* Main style sheet */
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: hsl(237, 100%, 70%);
+  text-decoration: inherit;
+}
+a:hover {
+  color: hsl(237, 86%, 64%);
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: hsla(0, 0%, 100%, 0.87);
+  background-color: hsl(0, 0%, 14%);
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.main-layout {
+  position: relative;
+  min-height: 50vh;
+  min-height: 50dvh;
+
+  display:grid;
+
+  border: 3px solid hsl(237, 86%, 64%);
+}
+
+.primary-header {
+  display: grid;
+  grid-template-areas: "stack";
+  place-items: center;
+}
+
+.primary-header > * {
+  grid-area: stack;
+}
+
+main {
+  position: relative;
+}
+
+
+
+/************/
+#appWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+  background: hsl(237, 86%, 64%);
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: transform 1000ms;
+
+  &:hover,
+  &:focus-visible {
+    outline: 2px solid lightseagreen;
+    transform: translateY(-1.75rem);
+    transition: transform 250ms;
+  }  
+}
+
+.party-time {
+  animation: party 2000ms infinite;
+}
+
+@keyframes party {
+  0% {
+    background-color: #adff2f;
+  }
+  20% {
+    background-color: green;
+  }
+  40% {
+    background-color: aqua;
+  }
+  60% {
+    background-color: blue;
+  }
+  80% {
+    background-color: blueviolet;
+  }
+  100% {
+    background-color: purple;
+  }
+}
