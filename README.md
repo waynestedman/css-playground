@@ -1,1 +1,1 @@
-# CSS Playground - for trying out CSS realted things
+# CSS Playground - for trying out CSS related things
