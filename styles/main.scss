@@ -88,6 +88,7 @@ main {
   &:hover,
   &:focus-visible {
     outline: 2px solid lightseagreen;
+    outline-offset: 4px;
     transform: translateY(-1.75rem);
     transition: transform 250ms;
   }  
